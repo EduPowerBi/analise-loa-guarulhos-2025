@@ -1,8 +1,6 @@
 # 📊 Monitoramento da Lei Orçamentária Anual (LOA 2025) - Guarulhos
 
-<p align="center">
-  <img src="ImgDashboard.png" width="70%" title="Dashboard LOA 2025">
-</p>
+![Demonstração do Dashboard](./ImgDashboard.png.png)
 
 ### **Contexto:**
 Este dashboard foi desenvolvido para monitorar a execução das emendas parlamentares da Lei Orçamentária Anual de 2025 para a Prefeitura de Guarulhos. A ferramenta visa dar transparência aos dados públicos, permitindo o acompanhamento do fluxo financeiro desde o empenho até o pagamento final.
