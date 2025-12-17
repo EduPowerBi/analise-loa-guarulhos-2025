@@ -1,0 +1,32 @@
+Aqui a explicação de alguns código:
+
+
+// --- MEDIDAS PRINCIPAIS (KPIs) ---
+
+// Calcula o Valor Total Bruto de todas as emendas parlamentares previstas para 2025.
+// Esta medida é a base para o cartão principal de R$ 1.19 Bilhões.
+
+ValorEmendas1 = SUM(Emendas[ValorDecisao])
+
+// --- INDICADORES DE EXECUÇÃO FINALIZADA ---
+
+// Calcula o montante total das emendas que já atingiram o estágio final de pagamento.
+// Esta medida alimenta o KPI "Valor pago das emendas" (R$ 770 Milhões), 
+// filtrando o valor de decisão apenas para os registros com status "Pagas".
+
+ValorEmendasPagas = 
+CALCULATE(
+    SUM(Emendas[ValorDecisao]),
+    FILTER(
+        Emendas,
+        Emendas[Estagio] = "Pagas"
+    )
+)
+
+// --- INDICADORES DE VOLUME ---
+
+// Realiza a contagem distinta de todos os códigos de emendas presentes na base.
+// Esta medida é utilizada no KPI "Qtde de Emendas 2025" (Resultado: 5.616),
+// servindo como métrica de volume total para o monitoramento legislativo.
+
+QtdeEmendas = COUNT(Emendas[Codigo])
