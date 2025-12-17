@@ -1,7 +1,7 @@
 # 📊 Monitoramento da Lei Orçamentária Anual (LOA 2025) - Guarulhos
 
 <p align="center">
-  <img src="ImgDashboard.png" width="80%" title="Dashboard LOA 2025">
+  <img src="ImgDashboard.png" width="70%" title="Dashboard LOA 2025">
 </p>
 
 ### **Contexto:**
