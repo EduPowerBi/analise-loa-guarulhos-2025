@@ -8,6 +8,7 @@ Aqui a explicação de alguns código:
 
 ValorEmendas1 = SUM(Emendas[ValorDecisao])
 
+***********************************************************************************
 // --- INDICADORES DE EXECUÇÃO FINALIZADA ---
 
 // Calcula o montante total das emendas que já atingiram o estágio final de pagamento.
@@ -15,13 +16,14 @@ ValorEmendas1 = SUM(Emendas[ValorDecisao])
 // filtrando o valor de decisão apenas para os registros com status "Pagas".
 
 ValorEmendasPagas = 
-CALCULATE(
-    SUM(Emendas[ValorDecisao]),
-    FILTER(
-        Emendas,
-        Emendas[Estagio] = "Pagas"
-    )
-)
+    CALCULATE(
+          SUM(Emendas[ValorDecisao]),
+       FILTER(
+              Emendas,
+              Emendas[Estagio] = "Pagas"
+             )
+             )
+***********************************************************************************
 
 // --- INDICADORES DE VOLUME ---
 
